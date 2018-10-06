@@ -342,7 +342,7 @@ int main(int argc,char **argv)
 	fflush(stdout); ecnt++;
       }
 
-      double u1 = countULP2dp(t = vget(sc.y, e), frx);
+      double u1 = countULP2dp(t = vget(sc2.y, e), frx);//sc2.y ?
 
       if (u1 != 0 && ((fabs(d) <= rangemax2 && u1 > 1.5) || fabs(t) > 1 || !isnumber(t))) {
 	printf(ISANAME " sincospi_u35 cos arg=%.20g ulp=%.20g\n", d, u1);
